@@ -1,41 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    android:id="@+id/topLevelLayout"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:id="@+id/llButtons"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_weight="1"
+    android:layout_marginLeft="20dp">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"/>
 
     <Button
         android:id="@+id/upButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="UP"
+        android:layout_weight="10"
+        android:text="Up"
         android:textSize="50sp" />
 
     <Button
         android:id="@+id/downButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DOWN"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        android:text="Down"
+        android:layout_weight="10" />
 
     <Button
         android:id="@+id/okButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OK"
-        android:textSize="50sp" />
-
-    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:textSize="50sp"
+        android:text="OK"
+        android:layout_weight="10"/>
+</LinearLayout>
 
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="1000"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
     <EditText
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:ems="10"
         android:gravity="start|top"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:padding="30dp"
+        android:text="The quick red fox\njumps over the lazy dog\nThis is just \nexample text" android:textSize="40sp"/>
     </LinearLayout>
 </LinearLayout>
