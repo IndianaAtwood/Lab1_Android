@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginTop="10dp" android:layout_weight="2" android:orientation="horizontal">
+        <TextView android:id="@+id/textViewFirstName" android:layout_width="255dp" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_weight="0" android:gravity="right|center_horizontal" android:text="First Name:" android:textSize="40sp"/>
+        <EditText android:id="@+id/editTextFirstName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:ems="10" android:inputType="textPersonName"/>
+        <TextView android:id="@+id/textViewLastName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="right|center_vertical" android:text="Last Name:" android:textSize="40sp"/>
+        <EditText android:id="@+id/editTextLastName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:ems="10" android:inputType="textPersonName"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginTop="10dp" android:layout_weight="2" android:orientation="horizontal">
+        <TextView android:id="@+id/textViewMin" android:layout_width="255dp" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_weight="0" android:gravity="right|center_horizontal" android:text="Min:" android:textSize="40sp"/>
+        <TextView android:id="@+id/textViewMinValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_weight="0" android:text="150" android:textSize="40sp"/>
+        <SeekBar android:id="@+id/seekBarMin" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1" android:max="500" android:progress="150"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginTop="10dp" android:layout_weight="2" android:orientation="horizontal">
+        <TextView android:id="@+id/textViewMax" android:layout_width="255dp" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_weight="0" android:gravity="right|center_horizontal" android:text="Max:" android:textSize="40sp"/>
+        <TextView android:id="@+id/textViewMaxValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_weight="0" android:text="400" android:textSize="40sp"/>
+        <SeekBar android:id="@+id/seekBarMax" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:max="500" android:progress="400"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginTop="10dp" android:layout_weight="2" android:orientation="horizontal">
+        <TextView android:id="@+id/textViewDept" android:layout_width="255dp" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_weight="0" android:gravity="right|center_horizontal" android:text="Department:" android:textSize="40sp"/>
+        <Spinner android:id="@+id/spinnerSchool" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3"/>
+        <Spinner android:id="@+id/spinnerDept" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginTop="10dp" android:layout_weight="2" android:orientation="horizontal">
+        <TextView android:id="@+id/textViewCount" android:layout_width="255dp" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_weight="0" android:gravity="right|center_horizontal" android:text="Count:" android:textSize="40sp"/>
+        <TextView android:id="@+id/textViewCountId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="0" android:textSize="40sp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginTop="10dp" android:layout_weight="1" android:gravity="right|center_horizontal" android:orientation="horizontal">
+        <Button android:id="@+id/buttonUpdate" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_weight="0" android:text="Update Count" android:textSize="40sp" android:onClick="changeMax"/>
+        <Button android:id="@+id/buttonContinue" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_weight="0" android:text="Continue" android:textSize="40sp"/>
+    </LinearLayout>
+</LinearLayout>
