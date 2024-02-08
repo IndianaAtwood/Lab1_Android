@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="10"
         android:text="Up"
-        android:textSize="50sp" />
+        android:textSize="50sp"/>
 
     <Button
         android:id="@+id/downButton"

@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // referencing code that I downloaded from lecture
-        setContentView(R.layout.more_complex);
+        setContentView(R.layout.drawstuff);
 
         TextView myFavTextView = new TextView(this);
         myFavTextView.setText("some text");
